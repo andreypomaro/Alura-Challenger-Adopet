@@ -1,5 +1,8 @@
 @import url(/assets/css/index.css);
 @import url(/assets/css/header.css);
+@import url(/assets/css/footer.css);
+@import url(/assets/css/cadastro.css);
+
 
 :root {
   --azul: #3772FF;
@@ -16,9 +19,8 @@
 
 body {
   font-family: var(--fonte-principal);
-  font-size: 18px;
-  background-color: var(--azul);
+  font-size: 18px;  
   background-image: url(/assets/img/fundo-cima.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }

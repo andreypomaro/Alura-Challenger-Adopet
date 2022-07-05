@@ -1,0 +1,6 @@
+.footer__texto {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 2em 0;
+    text-align: center;
+}
