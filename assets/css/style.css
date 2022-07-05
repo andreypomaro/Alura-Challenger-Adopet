@@ -1,0 +1,24 @@
+@import url(/assets/css/index.css);
+@import url(/assets/css/header.css);
+
+:root {
+  --azul: #3772FF;
+  --verde: #36D6AD;
+  --coral: #FC7071;
+  --coral-botao-hover: #ff9d9e;
+  --creme: #FCF0E3;
+  --cinza: #737380;
+  --cinza-claro: #BCBCBC;
+  -cinza-claro-fundos: #F6F6F6;
+  --branco: #FFFFFF;
+  --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  background-color: var(--azul);
+  background-image: url(/assets/img/fundo-cima.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,30 @@
+.chamada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--branco);
+  padding-top: 5em;
+}
+
+.chamada__conteudo {
+  padding-top: 3em;
+}
+
+.chamada__logo-imagem {
+  width: 100%;
+  height: 3em;
+}
+
+.chamada__titulo {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 1.5em;
+}
+
+.chamada__texto {
+  width: 55%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin: 1.6em 0;
+}
+
+.header__link {
+  padding: 0 2em;
+}
+
+.header__imagem {
+  width: 100%;
+  padding: 0.4em;
+}
