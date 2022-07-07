@@ -1,0 +1,61 @@
+@import url(/assets/css/style.css);
+@import url(/assets/css/header.css);
+@import url(/assets/css/footer.css);
+
+body {
+  background-color: var(--branco);
+  position: relative;
+  color: var(--azul);
+}
+
+.fundo__cima {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  background-image: url(/assets/img/fundo-cima.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -30px;
+}
+
+.fundo__patas {
+  position: absolute;
+  background-image: url(/assets/img/patas.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 210px;
+}
+
+.header {
+  position: absolute;
+}
+
+.logo__imagem {
+  margin-top: 9.75em;
+}
+
+.chamada {
+  text-align: center;
+  padding: 1.5em 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.chamada__texto {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.chamada__texto:nth-child(1) {
+  margin-bottom: 0.5em;
+}
+
+.botao {
+  padding: 2em;
+}
+
+footer {
+  margin-top: 5em;
+}

@@ -1,6 +1,3 @@
-@import url(/assets/css/index.css);
-@import url(/assets/css/header.css);
-@import url(/assets/css/footer.css);
 @import url(/assets/css/cadastro.css);
 
 
@@ -12,15 +9,74 @@
   --creme: #FCF0E3;
   --cinza: #737380;
   --cinza-claro: #BCBCBC;
-  -cinza-claro-fundos: #F6F6F6;
+  --cinza-claro-fundos: #F6F6F6;
   --branco: #FFFFFF;
   --fonte-principal: 'Poppins', sans-serif;
 }
 
 body {
   font-family: var(--fonte-principal);
-  font-size: 18px;  
-  background-image: url(/assets/img/fundo-cima.svg);
+  font-size: 18px;
+  background-image: url(/assets/img/fundo-cima.svg), url(/assets/img/fundo-lado.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: left top, right center;
+  min-height: 100vh;
+}
+
+.botao__link {
+  padding: 0.8em 2em;
+  border-radius: 10px;
+  box-shadow: 2px 3px var(--coral);
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--branco);
+  background-color: var(--coral);
+}
+
+.logo__imagem {
+  width: 100%;
+}
+
+.formulario {
+  position: relative;
+  text-align: center;
+  color: var(--cinza);
+}
+
+.formulario__item {
+  margin-bottom: 1em;
+}
+
+.formulario__label {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.formulario__input {
+  width: 85%;
+  max-width: 400px;
+  background-color: var(--cinza-claro-fundos);
+  border: none;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  margin-top: 0.8em;
+}
+
+.formulario__input::placeholder {
+  color: var(--cinza);
+  text-align: center;
+  font-size: 12px;
+}
+
+.background__lado-esquerdo {
+  position: absolute;
+  background-image: url(/assets/img/fundo-lado-esquerdo.svg);
+  background-repeat: no-repeat;
+  background-position-y: 190px;
+  width: 100%;
+  height: 650px;
 }

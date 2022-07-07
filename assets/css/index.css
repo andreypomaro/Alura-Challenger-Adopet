@@ -1,3 +1,7 @@
+@import url(/assets/css/style.css);
+@import url(/assets/css/header.css);
+@import url(/assets/css/footer.css);
+
 body {
   background-color: var(--azul);
 }
@@ -8,55 +12,12 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--branco);
-  padding-top: 5em;
   position: relative;
 }
 
-.chamada__conteudo {
-  padding-top: 3em;
-}
-
-.chamada__logo-imagem {
-  width: 100%;
-  height: 3em;
-}
-
-.chamada__titulo {
-  font-size: 26px;
-  font-weight: 500;
-  padding: 1.5em;
-}
-
-.chamada__texto {
-  width: 55%;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: 400;
-}
 
 .botao {
   margin-top: 3em;
-}
-
-.botao__link {
-  padding: 0.8em 2em;
-  border-radius: 10px;
-  box-shadow: 2px 3px var(--coral);
-  outline: none;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--branco);
-  background-color: var(--coral);
-}
-
-.imagem__lado {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  background-image: url(/assets/img/fundo-lado.svg);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
 }
 
 .imagem__embaixo {
