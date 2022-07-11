@@ -1,61 +1,45 @@
 @import url(/assets/css/style.css);
-@import url(/assets/css/header.css);
-@import url(/assets/css/footer.css);
 
 body {
-  background-color: var(--branco);
   position: relative;
+  background-color: var(--branco);
+  background-image: url(/assets/img/patas.svg), url(/assets/img/fundo-cima.svg);
+  background-position: right top, left top;
+  background-size: 8.5em, contain;
   color: var(--azul);
+  min-height: 100vh;
 }
 
-.fundo__cima {
+.logo__cadastro {
   width: 100%;
-  height: 50vh;
-  position: absolute;
-  background-image: url(/assets/img/fundo-cima.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -30px;
+  height: 50px;
+  padding: 1.5em 0 1em 0;
 }
 
-.fundo__patas {
-  position: absolute;
-  background-image: url(/assets/img/patas.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 100%;
-  height: 210px;
-}
-
-.header {
-  position: absolute;
-}
-
-.logo__imagem {
-  margin-top: 9.75em;
-}
-
-.chamada {
-  text-align: center;
-  padding: 1.5em 0;
-  width: 70%;
-  margin: 0 auto;
+.chamada__cadastro {
+  margin: 0.5em 0;
 }
 
 .chamada__texto {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
-.chamada__texto:nth-child(1) {
-  margin-bottom: 0.5em;
+.formulario {
+  padding-bottom: 5em;
+}
+
+.background__esquerdo {
+  background-image: url(/assets/img/fundo-lado-esquerdo.svg);
+  background-repeat: no-repeat;
+  background-position-y: 85%;
 }
 
 .botao {
-  padding: 2em;
+  padding-top: 2em;
 }
 
-footer {
-  margin-top: 5em;
+.botao__link {
+  padding: 1.2em 2.5em;
 }

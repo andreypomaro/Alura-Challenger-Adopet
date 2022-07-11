@@ -1,5 +1,5 @@
-@import url(/assets/css/cadastro.css);
-
+@import url(/assets/css/header.css);
+@import url(/assets/css/footer.css);
 
 :root {
   --azul: #3772FF;
@@ -17,17 +17,14 @@
 body {
   font-family: var(--fonte-principal);
   font-size: 18px;
-  background-image: url(/assets/img/fundo-cima.svg), url(/assets/img/fundo-lado.svg);
   background-repeat: no-repeat;
-  background-position: left top, right center;
   min-height: 100vh;
 }
 
 .botao__link {
-  padding: 0.8em 2em;
-  border-radius: 10px;
-  box-shadow: 2px 3px var(--coral);
-  outline: none;
+  width: 11em;
+  border-radius: 6px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -35,12 +32,24 @@ body {
   background-color: var(--coral);
 }
 
-.logo__imagem {
-  width: 100%;
+.botao {
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
+.chamada__titulo {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.chamada__texto {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0 auto;
 }
 
 .formulario {
-  position: relative;
   text-align: center;
   color: var(--cinza);
 }
@@ -53,10 +62,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   width: 100%;
+  padding: .5em;
 }
 
 .formulario__input {
-  width: 85%;
+  width: 80%;
   max-width: 400px;
   background-color: var(--cinza-claro-fundos);
   border: none;
@@ -70,13 +80,4 @@ body {
   color: var(--cinza);
   text-align: center;
   font-size: 12px;
-}
-
-.background__lado-esquerdo {
-  position: absolute;
-  background-image: url(/assets/img/fundo-lado-esquerdo.svg);
-  background-repeat: no-repeat;
-  background-position-y: 190px;
-  width: 100%;
-  height: 650px;
 }

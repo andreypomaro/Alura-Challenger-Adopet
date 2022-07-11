@@ -1,0 +1,19 @@
+.chamada__texto {
+  padding: 3em 0;
+}
+
+.formulario__item {
+  margin-bottom: 2em;
+}
+
+.formulario_senha {
+  color: var(--coral);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.botao {
+  padding: 3em 0 9em;
+}

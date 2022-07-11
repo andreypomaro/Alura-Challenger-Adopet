@@ -1,9 +1,9 @@
 @import url(/assets/css/style.css);
-@import url(/assets/css/header.css);
-@import url(/assets/css/footer.css);
 
 body {
   background-color: var(--azul);
+  background-image: url(/assets/img/fundo-cima.svg), url(/assets/img/fundo-lado.svg);
+  background-position: left top, right center;
 }
 
 .chamada {
@@ -12,20 +12,30 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--branco);
-  position: relative;
 }
 
+.chamada__texto {
+  width: 60%;
+  padding: 1.5em 0;
+}
 
-.botao {
-  margin-top: 3em;
+.logo__index {
+  width: 100%;
+  height: 50px;
+  padding: 2.5em 0 1em 0;
 }
 
 .imagem__embaixo {
   background-image: url(/assets/img/fundo-footer.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-position-y: 15px;
   width: 100%;
   height: 312px;
   margin-top: 3em;
+}
+
+.botao__link {
+  display: block;
+  padding: 0.8em 1em;
 }
