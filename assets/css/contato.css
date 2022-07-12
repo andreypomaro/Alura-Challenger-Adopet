@@ -1,0 +1,27 @@
+@import url(/assets/css/style.css);
+
+body {
+  background-image: url(/assets/img/fundo-cima.svg);
+  background-position: left top;
+  background-size: contain;
+}
+
+.header__usuario {
+  padding: 0 0 0 8em;
+}
+
+.imagem__usuario {
+  width: 75%;
+  padding: 0.1em;
+}
+
+.contato__titulo {
+  color: var(--azul);
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 5.5em;
+}
