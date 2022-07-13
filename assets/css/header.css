@@ -13,3 +13,39 @@
   width: 100%;
   padding: 0.3em;
 }
+
+.header__home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__icone-principal {
+  width: 70%;
+  padding: 3em 0 2em 2em;
+}
+
+.header__link-principal {
+  padding-right: 3em;
+  text-decoration: none;
+}
+
+.header__imagemPrincipal {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.header__icone-usuario {
+  width: 30%;
+  margin-right: 3em;
+  padding: 2em 0 2em 0em;
+}
+
+.header__link-usuario {
+  text-decoration: none;
+}
+
+.header__imagemUsuario {
+  width: 3em;
+  height: 3em;
+}
