@@ -1,0 +1,74 @@
+@import url(/assets/css/style.css);
+
+body {
+  background-image: url(/assets/img/fundo-cima.svg);
+  background-position: left top;
+  background-size: 352px 295px;
+}
+
+.perfil__chamada {
+  color: var(--azul);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 2.5em;
+}
+
+.perfil {
+  background-color: var(--cinza-claro-fundos);
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 1.5em;
+}
+
+.perfil__titulo {
+  color: var(--cinza);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  padding: 1.5em 0 0 0;
+}
+
+.perfil__p {
+  padding: 1em 1.5em;
+  color: var(--azul);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.perfil__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil__editarFoto {
+  text-decoration: none;
+  color: var(--coral);
+  padding: 0.5em 0;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.form__contato {
+  margin-top: 0;
+}
+
+.form__contato-item:nth-child(1) {
+  padding-top: 0;
+}
+
+.botao {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.botao__link {
+  padding: 0.8em 3em;
+}

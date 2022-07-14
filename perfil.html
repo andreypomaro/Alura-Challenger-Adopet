@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopet - Perfil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/perfil.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header__home">
+      <div class="header__icone-principal">
+        <a href="#" class="header__link-principal">
+          <img src="/assets/img/icone-home.svg" alt="Ícone Home" class="header__imagemPrincipal">
+        </a>
+        <a href="#" class="header__link-principal">
+          <img src="/assets/img/icone-mensagem.svg" alt="Ícone Mensagem" class="header__imagemPrincipal">
+        </a>
+      </div>
+      <div class="header__icone-usuario">
+        <a href="#" class="header__link-usuario">
+          <img src="/assets/img/foto-perfil.svg" alt="Foto Perfil" class="header__imagemUsuario">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="perfil__chamada">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</h2>
+    <section class="perfil">
+      <h1 class="perfil__titulo">Perfil</h1>
+      <p class="perfil__p">Foto</p>
+      <div class="perfil__foto">
+        <img src="/assets/img/foto-perfil.svg" alt="Foto do Perfil">
+        <a href="#" class="perfil__editarFoto">Clique na foto para editar</a>
+      </div>
+      <form class="form__contato">
+        <div class="form__contato-item">
+          <label for="nome" class="form__contato-label">Nome</label>
+          <input type="text" name="nome" placeholder="Insira seu nome completo" required class="form__contato-input">
+        </div>
+        <div class="form__contato-item">
+          <label for="telefone" class="form__contato-label">Telefone</label>
+          <input type="number" name="telefone" placeholder="Insira seu telefone e/ou whatsapp" required
+            class="form__contato-input">
+        </div>
+        <div class="form__contato-item">
+          <label for="cidade" class="form__contato-label">Cidade</label>
+          <input type="text" name="cidade" placeholder="Insira sua cidade" required class="form__contato-input">
+        </div>
+        <div class="form__contato-item">
+          <label for="mensagem" class="form__contato-label">Mensagem</label>
+          <textarea name="mensagem" cols="30" rows="10" placeholder="Escreva um pouco sobre você" required
+            class="form__contato-mensagem"></textarea>
+        </div>
+        <div class="botao">
+          <a href="#" class="botao__link">Salvar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer__texto">2022 - Desenvolvido por Andrey Pomaro.</p>
+  </footer>
+</body>
+
+</html>

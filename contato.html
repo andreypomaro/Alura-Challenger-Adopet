@@ -15,16 +15,18 @@
 
 <body>
   <header>
-    <nav class="header">
-      <a href="#" class="header__link">
-        <img src="/assets/img/icone-home.svg" alt="Ícone Home" class="header__imagem">
-      </a>
-      <a href="#" class="header__link">
-        <img src="/assets/img/icone-mensagem.svg" alt="Ícone Mensagem" class="header__imagem">
-      </a>
-      <div class="header__usuario">
-        <a href="#" class="header__link">
-          <img src="/assets/img/usuario.svg" alt="Ícone usuario" class="header__imagem imagem__usuario">
+    <nav class="header__home">
+      <div class="header__icone-principal">
+        <a href="#" class="header__link-principal">
+          <img src="/assets/img/icone-home.svg" alt="Ícone Home" class="header__imagemPrincipal">
+        </a>
+        <a href="#" class="header__link-principal">
+          <img src="/assets/img/icone-mensagem.svg" alt="Ícone Mensagem" class="header__imagemPrincipal">
+        </a>
+      </div>
+      <div class="header__icone-usuario">
+        <a href="#" class="header__link-usuario">
+          <img src="/assets/img/usuario.svg" alt="Ícone usuario" class="header__imagemUsuario">
         </a>
       </div>
     </nav>
@@ -32,7 +34,36 @@
 
   <main>
     <h1 class="contato__titulo">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</h1>
+
+    <form class="form__contato">
+      <div class="form__contato-item">
+        <label for="nome" class="form__contato-label">Nome</label>
+        <input type="text" name="nome" placeholder="Insira seu nome completo" required class="form__contato-input">
+      </div>
+      <div class="form__contato-item">
+        <label for="telefone" class="form__contato-label">Telefone</label>
+        <input type="number" name="telefone" placeholder="Insira seu telefone e/ou whatsapp" required
+          class="form__contato-input">
+      </div>
+      <div class="form__contato-item">
+        <label for="nomePet" class="form__contato-label">Nome do Pet</label>
+        <input type="text" name="nomePet" placeholder="Por qual animal você se interessou?" required
+          class="form__contato-input">
+      </div>
+      <div class="form__contato-item">
+        <label for="mensagem" class="form__contato-label">Mensagem</label>
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem." required
+          class="form__contato-mensagem"></textarea>
+      </div>
+      <div class="botao">
+        <a href="#" class="botao__link">Enviar</a>
+      </div>
+    </form>
   </main>
+
+  <footer>
+    <p class="footer__texto">2022 - Desenvolvido por Andrey Pomaro.</p>
+  </footer>
 
 </body>
 

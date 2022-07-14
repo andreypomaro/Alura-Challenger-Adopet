@@ -3,7 +3,7 @@
 body {
   background-image: url(/assets/img/fundo-cima.svg);
   background-position: left top;
-  background-size: contain;
+  background-size: 352px 295px;
 }
 
 .header__usuario {
@@ -23,5 +23,14 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 5.5em;
+  margin-top: 3em;
+}
+
+.botao {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.botao__link {
+  padding: 0.8em 3em;
 }
