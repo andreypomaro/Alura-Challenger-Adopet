@@ -9,6 +9,10 @@
   padding: 0 0 0 2em;
 }
 
+.header__link:nth-child(1) {
+  display: none;
+}
+
 .header__imagem {
   width: 100%;
   padding: 0.3em;
@@ -30,6 +34,10 @@
   text-decoration: none;
 }
 
+.header__link-principal:nth-child(1) {
+  display: none;
+}
+
 .header__imagemPrincipal {
   width: 1.8em;
   height: 1.8em;
@@ -48,4 +56,30 @@
 .header__imagemUsuario {
   width: 3em;
   height: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .header__link {
+    padding: 0 0 0 3.5em;
+  }
+
+  .header__link:nth-child(1) {
+    padding: 0 0 0 2em;
+    display: block;
+  }
+
+  .header__link-principal:nth-child(1) {
+    display: inline;
+  }
+
+  .header__icone-usuario {
+    text-align: center;
+    padding: 2em 0 2em 0em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-left: 3em;
+  }
 }

@@ -19,6 +19,10 @@ body {
   padding: 1.5em 0;
 }
 
+.chamada__texto-tablet {
+  display: none;
+}
+
 .logo__index {
   width: 100%;
   height: 50px;
@@ -38,4 +42,63 @@ body {
 .botao__link {
   display: block;
   padding: 0.8em 1em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position-x: -2.3%, 100%;
+    background-size: 529px 434px, 134px 664px;
+  }
+
+  .logo__index {
+    width: 100%;
+    height: 62px;
+    padding: 5.5em 0 2em 0;
+  }
+
+  .chamada__titulo {
+    font-size: 28px;
+  }
+
+  .chamada__texto {
+    font-size: 18px;
+    width: 45%;
+    padding: 2em 0;
+  }
+
+  .chamada__texto-mobile {
+    display: none;
+  }
+
+  .chamada__texto-tablet {
+    display: block;
+  }
+
+  .botao {
+    font-size: 18px;
+  }
+
+  .botao__link {
+    padding: 1em 5.5em;
+  }
+
+  .imagem__embaixo {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-position-x: -0.1%, 100%;
+    background-size: 560px 469px, 134px 664px;
+  }
+
+  .logo__index {
+    height: 64px;
+    padding: 0em 0 2em 0;
+  }
+
+  .chamada__texto {
+    width: 33%;
+  }
 }

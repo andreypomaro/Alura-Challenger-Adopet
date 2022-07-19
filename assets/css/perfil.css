@@ -56,6 +56,12 @@ body {
   line-height: 24px;
 }
 
+.form__contato-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .form__contato {
   margin-top: 0;
 }
@@ -71,4 +77,22 @@ body {
 
 .botao__link {
   padding: 0.8em 3em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-size: 560px 470px, 134px 664px;
+    background-image: url(/assets/img/fundo-cima.svg), url(/assets/img/fundo-lado.svg);
+    background-position: top left, center right;
+  }
+
+  .perfil__chamada {
+    margin-top: 8em;
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .perfil {
+    width: 74%;
+  }
 }

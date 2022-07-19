@@ -62,3 +62,80 @@ body {
 .container__pet-local {
   padding-top: 1em;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-size: 560px 470px;
+  }
+
+  .home__titulo {
+    margin-top: 8em;
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .pets {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .container__pet {
+    width: 344px;
+    height: 200px;
+    background-color: var(--cinza-claro-fundos);
+    margin: 0 auto;
+  }
+
+  .container__pet-foto {
+    width: 35%;
+    padding: 1em;
+  }
+
+  .container__pet-descricao {
+    width: 65%;
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: 560px 470px;
+  }
+
+  .header__icone-principal {
+    margin-left: 3em;
+  }
+
+  .home__titulo {
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  .pets {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .container__pet {
+    width: 363px;
+    height: 200px;
+    background-color: var(--cinza-claro-fundos);
+  }
+
+  .background__meioPagina {
+    background-image: url(/assets/img/fundo-lado.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 135px 664px;
+  }
+}

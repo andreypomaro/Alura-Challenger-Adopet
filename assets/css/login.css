@@ -1,3 +1,16 @@
+body {
+
+  background-color: var(--branco);
+  background-image: url(/assets/img/patas.svg), url(/assets/img/fundo-cima.svg);
+  background-position: right top, left top;
+  background-size: 8.5em, 352px 295px;
+  color: var(--azul);
+}
+
+.logo__cadastro {
+  margin-top: 3em;
+}
+
 .chamada__texto {
   padding: 3em 0;
 }
@@ -16,4 +29,41 @@
 
 .botao {
   padding: 3em 0 9em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position-x: 105%, -2.3%;
+    background-size: 292px 374px, 529px 434px;
+  }
+
+  .logo__cadastro {
+    margin-top: 0em;
+    height: 62px;
+  }
+
+  .chamada__texto {
+    font-size: 18px;
+    padding: 2em 0;
+  }
+
+  .formulario_senha {
+    font-size: 16px;
+  }
+
+  .botao__link {
+    padding: 0.5em 3em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-position-x: 102%, -0.01%;
+    background-position-y: -0.5%, 0;
+    background-size: 292px 374px, 560px 470px;
+  }
+
+  .logo__cadastro {
+    height: 64px;
+  }
 }

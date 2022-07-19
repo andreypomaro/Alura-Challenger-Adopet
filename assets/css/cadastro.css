@@ -3,11 +3,11 @@
 body {
   position: relative;
   background-color: var(--branco);
-  background-image: url(/assets/img/patas.svg), url(/assets/img/fundo-cima.svg);
-  background-position: right top, left top;
-  background-size: 8.5em, contain;
+  background-image: url(/assets/img/fundo-cima.svg), url(/assets/img/patas.svg);
+  background-position: left top, top right;
+  background-size: 352px 295px, 8.5em;
   color: var(--azul);
-  min-height: 100vh;
+
 }
 
 .logo__cadastro {
@@ -30,16 +30,75 @@ body {
   padding-bottom: 5em;
 }
 
-.background__esquerdo {
+.background__meioPagina {
   background-image: url(/assets/img/fundo-lado-esquerdo.svg);
   background-repeat: no-repeat;
-  background-position-y: 85%;
+  background-position-y: 65%;
 }
 
 .botao {
   padding-top: 2em;
+  font-weight: 600;
 }
 
 .botao__link {
   padding: 1.2em 2.5em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position-x: 0%, 103%;
+    background-position-y: 0, -3%;
+    background-size: 559px 469px, 292px 374px;
+  }
+
+  .background__meioPagina {
+    background-image: url(/assets/img/fundo-lado.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 135px 664px;
+  }
+
+  .logo__cadastro {
+    padding: 5.5em 0 1em 0;
+    height: 62px;
+  }
+
+  .chamada__texto {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .formulario {
+    padding-bottom: 11em;
+  }
+
+  .botao {
+    padding-top: 3em;
+  }
+
+  .botao__link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-position-x: 0%, 103%;
+    background-position-y: 0, -3%;
+    background-size: 559px 469px, 292px 374px;
+  }
+
+  .logo__cadastro {
+    padding: 0 0 1em 0;
+    height: 64px;
+  }
+
+  .botao__link {
+    padding: 0.5em 2em;
+  }
+
+  .formulario {
+    padding-bottom: 6.5em;
+  }
 }
