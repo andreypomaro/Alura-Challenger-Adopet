@@ -96,3 +96,22 @@ body {
     width: 74%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .header__icone-principal {
+    padding: 3em 0 2em 5em;
+  }
+
+  .perfil__chamada {
+    margin-top: 4em;
+    width: 38%;
+  }
+
+  .perfil {
+    width: 45%;
+  }
+
+  .form__contato {
+    width: 100%;
+  }
+}

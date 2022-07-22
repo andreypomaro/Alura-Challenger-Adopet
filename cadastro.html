@@ -8,6 +8,8 @@
     <title>Cadastro - Adopet</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/cadastro.css">
+    <script defer src="/assets/js/validacoes.js"></script>
+    <script defer src="/assets/js/cadastro.js"></script>
 </head>
 
 <body>
@@ -35,29 +37,33 @@
             <p class="chamada__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
         </div>
 
-        <form class="formulario">
+        <form class="formulario" id="formulario__registro">
             <div class="formulario__item">
                 <label for="Email" class="formulario__label">Email</label>
-                <input type="email" name="Email" placeholder="Escolha seu melhor email" class="formulario__input">
+                <input type="email" name="Email" placeholder="Escolha seu melhor email" class="formulario__input"
+                    data-required id="email" data-min-length="3" data-email-validate>
             </div>
             <div class="formulario__item">
                 <label for="Nome" class="formulario__label">Nome</label>
-                <input type="text" name="Nome" placeholder="Digite seu nome completo" class="formulario__input">
+                <input type="text" name="Nome" placeholder="Digite seu nome completo" class="formulario__input"
+                    data-required id="nome" data-max-length="16" data-only-letters>
             </div>
             <div class="formulario__item">
                 <label for="senha" class="formulario__label">Senha</label>
-                <input type="password" name="senha" placeholder="Crie uma senha" class="formulario__input">
+                <input type="password" name="senha" placeholder="Crie uma senha" class="formulario__input" id="senha"
+                    data-required data-password-validate data-min-length="8">
             </div>
             <div class="formulario__item">
                 <label for="senha2" class="formulario__label">Confirme sua senha</label>
-                <input type="password" name="senha2" placeholder="Repita a senha criada acima"
-                    class="formulario__input">
+                <input type="password" name="senha2" placeholder="Repita a senha criada acima" class="formulario__input"
+                    id="repetirSenha" data-required data-equal='senha'>
             </div>
 
             <div class="botao">
-                <a href="#" class="botao__link">Cadastrar</a>
+                <input id="botao__submit" type="submit" value="Cadastrar" class="botao__link">
             </div>
         </form>
+        <p class="error-validation template" id="error"></p>
 
     </main>
 

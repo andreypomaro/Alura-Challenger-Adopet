@@ -52,3 +52,14 @@ body {
     margin-bottom: 2em;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .header__icone-principal {
+    padding: 3em 0 2em 5em;
+  }
+
+  .contato__titulo {
+    margin-top: 4.5em;
+    width: 35%;
+  }
+}

@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/cadastro.css">
   <link rel="stylesheet" href="/assets/css/login.css">
+
+  <script defer src="/assets/js/validacoes.js"></script>
+  <script defer src="/assets/js/login.js"></script>
 </head>
 
 <body>
@@ -34,23 +37,26 @@
 
     <h1 class="chamada__texto">Já tem conta? Faça seu login:</h1>
 
-    <form class="formulario">
+    <form class="formulario" id="formulario__registro">
       <div class="formulario__item">
         <label for="Email" class="formulario__label">Email</label>
-        <input type="email" name="Email" placeholder="Insira seu email" class="formulario__input">
+        <input type="email" name="Email" placeholder="Insira seu email" class="formulario__input" data-required
+          id="email" data-min-length="3" data-email-validate>
       </div>
 
       <div class="formulario__item">
         <label for="senha" class="formulario__label">Senha</label>
-        <input type="password" name="senha" placeholder="Insira sua senha" class="formulario__input">
+        <input type="password" name="senha" placeholder="Insira sua senha" class="formulario__input" data-required
+          data-password-validate data-min-length="8">
       </div>
 
       <a href="#" class="formulario_senha">Esqueci minha senha.</a>
 
       <div class="botao">
-        <a href="#" class="botao__link">Entrar</a>
+        <input id="botao__submit" type="submit" value="Entrar" class="botao__link">
       </div>
     </form>
+    <p class="error-validation template"></p>
   </main>
 
   <footer>

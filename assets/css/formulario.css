@@ -15,7 +15,7 @@
 }
 
 .form__contato-item {
-  padding: 0.5em 1em;
+  padding: 0.5em 10%;
   color: var(--azul);
   font-weight: 600;
   font-size: 16px;
@@ -76,7 +76,7 @@
   font-size: 16px;
   font-weight: 400;
   width: 100%;
-  padding: .5em;
+  padding-top: 1em;
 }
 
 .formulario__input {
@@ -101,6 +101,11 @@
     font-size: 18px;
   }
 
+  .form__contato-item {
+    display: flex;
+    flex-direction: column;
+  }
+
   .formulario__input::placeholder {
     font-size: 14px;
     color: var(--cinza-claro);
@@ -108,5 +113,15 @@
 
   .form__contato {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form__contato {
+    width: 40%;
+  }
+
+  .form__contato-item {
+    padding: 0.5em 5%;
   }
 }
