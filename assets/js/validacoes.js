@@ -142,14 +142,13 @@ class Validator {
   }
 }
 
-function login () {
+function login() {
   let cadastroValido = document.querySelectorAll('form p');
 
   if (cadastroValido.length === 0) {
     window.location.href = "/login.html";
   }
 }
-
 
 let form = document.getElementById("formulario__registro");
 let submit = document.getElementById("botao__submit");
