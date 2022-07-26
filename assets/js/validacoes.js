@@ -16,6 +16,7 @@ class Validator {
 
     let currentValidations = document.querySelectorAll('form .error-validation');
 
+
     if (currentValidations.length > 0) {
       this.cleanValidations(currentValidations)
     }
@@ -71,7 +72,7 @@ class Validator {
   }
 
   onlyletters(input) {
-    let re = /^[A-Za-z]+$/
+    let re = /^[A-Z a-z]+$/
 
     let inputvalue = input.value;
 
@@ -141,6 +142,15 @@ class Validator {
   }
 }
 
+function login () {
+  let cadastroValido = document.querySelectorAll('form p');
+
+  if (cadastroValido.length === 0) {
+    window.location.href = "/login.html";
+  }
+}
+
+
 let form = document.getElementById("formulario__registro");
 let submit = document.getElementById("botao__submit");
 let erro = document.querySelectorAll("#error");
@@ -153,8 +163,5 @@ submit.addEventListener('click', function (e) {
 
   validator.validate(form);
 
+  setTimeout(login, 500)
 })
-
-// if (erro.length == 1) {
-//   window.location = "/login.html";
-// }
